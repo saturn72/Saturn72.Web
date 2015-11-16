@@ -11,15 +11,19 @@ namespace Saturn72.Web.Framework.WebApi
     {
         public void Configure()
         {
-            var apiConfigs = new List<IWebApiConfiguration>();
             var typeFinder = EngineContext.Current.Resolve<ITypeFinder>();
-            typeFinder.FindClassesOfType<IWebApiConfiguration>()
-                .ForEachItem(ac =>
+            var findClassesOfType = typeFinder.FindClassesOfType<IWebApiConfiguration>();
+
+            var apiConfigs = new List<IWebApiConfiguration>();
+            findClassesOfType.ForEachItem(ac =>
                     apiConfigs.Add((IWebApiConfiguration) Activator.CreateInstance(ac)));
 
             GlobalConfiguration.Configure(config =>
             {
                 config.MapHttpAttributeRoutes();
+
+                if (apiConfigs.IsEmpty())
+                    return;
 
                 foreach (var apiConfig in apiConfigs.OrderBy(ac=>ac.Order))
                     config.Routes.MapHttpRoute(apiConfig.Name, apiConfig.RouteTemplate, apiConfig.Defaults,
