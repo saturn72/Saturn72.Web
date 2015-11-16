@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageResources>
+  
+  <!--Common-->
+  <LanguageResource Name="Admin.Common.Edit" Value="Edit" />
+  <LanguageResource Name="Admin.Common.Delete" Value="Delete" />
+  <LanguageResource Name="Admin.Common.Save" Value="Save" />
+  <LanguageResource Name="Admin.Common.SaveContinue" Value="Save and Continue" />
+  <LanguageResource Name="Admin.Common.AddNew" Value="Add New" />
+  
+  <!--prespectives-->
+  <LanguageResource Name="Admin.Dashboard" Value="Dashboard" />
+  <LanguageResource Name="Admin.System" Value="System" />
+  <LanguageResource Name="Admin.System.ScheduleTask" Value="Schedule Tasks" />
+  <LanguageResource Name="Admin.Clients" Value="Automation Clients" />
+  <LanguageResource Name="Admin.Clients.Manage" Value="Manage Client Machines" />
+  
+  <!--Installation -->
+  <LanguageResource Name="Automation.Install.Message.CannotInstallResources" Value="Failed to install resources. Please resubmit form with correct values."/>
+  <LanguageResource Name="Automation.Install.Messages.ClickToInstall" Value="Install"/>
+  <LanguageResource Name="Automation.Installation.Message.AllInstalled" Value="All resources installed"/>
+  
+  <!--ClientMachineModel-->
+  <LanguageResource Name="Admin.System.ClientMachine.Fields.Name" Value="Name" />
+  <LanguageResource Name="Admin.System.ClientMachine.Fields.IpAddress" Value="IpAddress" />
+  <LanguageResource Name="Admin.System.ClientMachine.Fields.Active" Value="Active" />
+  <LanguageResource Name="Admin.System.ClientMachine.Fields.LastConnectionOn" Value="Last Connection On" />
+
+  <LanguageResource Name="Admin.System.ClientMachine.NotExists" Value="The client machine does not exist." />
+
+  
+  <!--ScheduleTaskModel-->
+  <LanguageResource Name="Admin.System.ScheduleTasks.Fields.Name" Value="Name" />
+  <LanguageResource Name="Admin.System.ScheduleTasks.Fields.Name.Messages.Required" Value="Name is required" />
+  <LanguageResource Name="Admin.System.ScheduleTasks.Fields.Seconds" Value="Seconds Interval" />
+  <LanguageResource Name="Admin.System.ScheduleTasks.Fields.Seconds.Messages.Positive" Value="Interval must be larger than 0" />
+  <LanguageResource Name="Admin.System.ScheduleTasks.Fields.Enabled" Value="Enabled" />
+  <LanguageResource Name="Admin.System.ScheduleTasks.Fields.StopOnError" Value="Stop On Error" />
+  <LanguageResource Name="Admin.System.ScheduleTasks.Fields.LastStart" Value="Last Start" />
+  <LanguageResource Name="Admin.System.ScheduleTasks.Fields.LastEnd" Value="Last End" />
+  <LanguageResource Name="Admin.System.ScheduleTasks.Fields.LastSuccess" Value="Last Success" />
+
+
+  <!--TestCase-->
+  <LanguageResource Name="Automation.AutomationJob.Fields.Name" Value="Name" />
+  <LanguageResource Name="Automation.AutomationJob.Fields.Name.Messages.AlreadyExists" Value="The provided name is already in use." />
+  <LanguageResource Name="Automation.AutomationJob.Fields.Name.Messages.NotEmpty" Value="Name cannot be empty." />
+  <LanguageResource Name="Automation.AutomationJob.Fields.DisplayName" Value="Display Name" />
+  <LanguageResource Name="Automation.AutomationJob.Fields.DisplayName.Messages.AlreadyExists" Value="The provided display name is already in use." />
+  <LanguageResource Name="Automation.AutomationJob.Fields.DisplayName.Messages.NotEmpty" Value="Display name cannot be empty." />
+  <LanguageResource Name="Automation.AutomationJob.Fields.Description" Value="Description" />
+  <LanguageResource Name="Automation.AutomationJob.Fields.Comment" Value="Comment" />
+  <LanguageResource Name="Automation.AutomationJob.Fields.Enabled" Value="Enabled" />
+  <LanguageResource Name="Automation.AutomationJob.Fields.Published" Value="Published" />
+  <LanguageResource Name="Automation.AutomationJob.Fields.Guid" Value="Guid" />
+  <LanguageResource Name="Automation.AutomationJob.Fields.Guid.Messages.AlreadyExists" Value="Guid field cannot be empty" />
+
+  <LanguageResource Name="Automation.AutomationJobNotExists" Value="The required test case not exists." />
+  <LanguageResource Name="Automation.AutomationJobDisabled" Value="The required test case is disabled." />
+  <LanguageResource Name="Automation.AutomationJobMessages.CannotEdit" Value="The selected test case cannot be edited." />
+  <LanguageResource Name="Automation.AutomationJob.Updated" Value="The selected test case was updated." />
+  <LanguageResource Name="Automation.AutomationJob.Added" Value="The selected test case was added." />
+  <LanguageResource Name="Automation.AutomationJob.Header" Value="AutomationJobs" />
+
+  <!--Execution-->
+  <LanguageResource Name="Automation.Execution.Messages.AddedToExecutionQueue" Value="The test case was added to execution queue." />
+  
+</LanguageResources>

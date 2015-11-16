@@ -1,0 +1,34 @@
+﻿<ul id="main-menu"></ul>
+
+<script>
+    //var menuData = [{ "text": "Baseball", "url": "requests", "imageUrl": "http:\/\/demos.kendoui.com\/content\/shared\/icons\/sports\/baseball.png" }, { "text": "Golf", "url": "agencies", "imageUrl": "http:\/\/demos.kendoui.com\/content\/shared\/icons\/sports\/golf.png" }];
+    var menuData = '@Html.Raw(Url.Action("GetMainMenu", "Ui"))';
+
+    $("#main-menu").kendoMenu();
+    $(document).ready(function () {
+        loadMenuItems();
+    });
+
+    function loadMenuItems() {
+        var postData = {
+            userName: '@HttpContext.Current.User.Identity.Name',
+            sessionId:'123abc'
+        };
+
+        addAntiForgeryToken(postData);
+
+        $.ajax({
+            cache: false,
+            type: 'POST',
+            dataType: 'json',
+            url: '/Ui/GetMainMenu',
+            success: function (res) {
+                $('#main-menu').dataSource(res.text);
+            },
+            error: function () {
+                $('#main-menu').dataSource('');
+            },
+            processData: false
+        });
+    }
+</script>

@@ -1,0 +1,36 @@
+﻿@model AutomationJobPlanModel
+@Html.ValidationSummary(false)
+@Html.HiddenFor(model => model.Id)
+@Html.HiddenFor(model => model.AutomationJobId)
+
+<script>
+    $(document).ready(function () {
+        $("#automation-job-plan-edit").kendoTabStrip({
+            animation: {
+                open: {
+                    effects: "fadeIn"
+                }
+            },
+            select: tabstrip_on_tab_select
+        });
+    });
+</script>
+<div id="automation-job-plan-edit">
+    <ul>
+        <li @Html.RenderSelectedTabIndex(0, GetSelectedTabIndex())>
+            @T("Automation.AutomationJobPlan.Info")
+        </li>
+    </ul>
+
+    <div>
+        @TabInfo()
+    </div>
+</div>
+
+@*save selected tab index*@
+<input type="hidden" id="selected-tab-index" name="selected-tab-index" value="@(GetSelectedTabIndex())">
+
+@helper TabInfo()
+{
+    @Html.Partial("_CreateOrUpdate.Info", Model)
+}

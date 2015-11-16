@@ -1,0 +1,264 @@
+﻿<LanguageResources>
+  <!--Common-->
+  <LanguageResource>
+    <Name>Automation.Server.Title</Name>
+    <Value>Automation Server</Value>
+  </LanguageResource>
+  <!--Commands-->
+  <LanguageResource>
+    <Name>Automation.Common.Plan</Name>
+    <Value>Plan</Value>
+  </LanguageResource>
+
+  <LanguageResource>
+    <Name>Automation.Common.Actions</Name>
+    <Value>Actions</Value>
+  </LanguageResource>
+
+  <!--Automation tests-->
+  <LanguageResource>
+    <Name>
+      Automation.Server.AutomationJob.Catalog
+    </Name>
+    <Value>Automation Job Catalog</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.Server.AutomationJobList</Name>
+    <Value>Automation Jobs List</Value>
+  </LanguageResource>
+
+
+  <!--Automation Job-->
+  <!--Commands-->
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Run</Name>
+    <Value>Run</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.AddNew</Name>
+    <Value>Add New Automation Job</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Added</Name>
+    <Value>The automation job was added successfuly</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.BackToList</Name>
+    <Value>Back to Automation Job List</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Edit</Name>
+    <Value>Edit</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.CannotEdit</Name>
+    <Value>Cannot edit the selected automation job</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Updated</Name>
+    <Value>The selected automation job was successfully updated</Value>
+  </LanguageResource>
+
+  <!--Titles-->
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Details</Name>
+    <Value>Details</Value>
+  </LanguageResource>
+
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Parameters</Name>
+    <Value>Parameters</Value>
+  </LanguageResource>
+  <!--Fields-->
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Name</Name>
+    <Value>Name</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Name.Hint</Name>
+    <Value>Automation job name</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Name.Messages.NotEmpty</Name>
+    <Value>Name cannot be empty</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.DisplayName</Name>
+    <Value>Display name</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.DisplayName.Hint</Name>
+    <Value>Automation job display name</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.DisplayName.Messages.NotEmpty</Name>
+    <Value>Display name cannot be empty</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.DisplayName.Messages.AlreadyExists</Name>
+    <Value>Automation job with the same display name already exists</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Description</Name>
+    <Value>Description</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Description.Hint</Name>
+    <Value>Automation job description</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Comment</Name>
+    <Value>Comment</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Comment.Hint</Name>
+    <Value>Automation job comment</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Enabled</Name>
+    <Value>Enabled</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Enabled.Hint</Name>
+    <Value>Specifies if the automation job is enabled</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Published</Name>
+    <Value>Published</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Published.Hint</Name>
+    <Value>Specifies if the automation job is published</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Guid</Name>
+    <Value>Guid</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Guid.Messages.NotEmpty</Name>
+    <Value>Guid field cannot be empty</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Guid.Messages.AlreadyExists</Name>
+    <Value>Automation job with the same guid already exists</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJob.Fields.Guid.Hint</Name>
+    <Value>Automation job GUID</Value>
+  </LanguageResource>
+
+  <!--Automation Job Plan-->
+  <!--Commands-->
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.AddNew</Name>
+    <Value>Add New Automation Job</Value>
+  </LanguageResource>
+  <!--<LanguageResource>
+    <Name>Automation.AutomationJobPlan.Added</Name>
+    <Value>The Automation job was added successfuly</Value>
+  </LanguageResource>-->
+  <LanguageResource>
+  <Name>Automation.AutomationJobPlan.BackToAutomationJobPlanList</Name>
+  <Value>Back to Automation Job List</Value>
+</LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.BackToList</Name>
+    <Value>Back to Automation Job Plan List</Value>
+  </LanguageResource>
+  <!--
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Edit</Name>
+    <Value>Edit</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.CannotEdit</Name>
+    <Value>Cannot edit the selected automation job</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Updated</Name>
+    <Value>The selected automation job was successfully updated</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.Server.AutomationJobPlanList</Name>
+    <Value>Automation Job Plan List</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.Server.AutomationJobPlan.Catalog</Name>
+    <Value>Automation Job Plans</Value>
+  </LanguageResource>-->
+
+  <!--Headers-->
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Info</Name>
+    <Value>Info</Value>
+  </LanguageResource>
+  <!--Fields-->
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.CreatedOnUtc</Name>
+    <Value>Created On</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.CreatedOnUtc.Hint</Name>
+    <Value>Created On</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.UpdatedOnUtc</Name>
+    <Value>Created On</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.UpdatedOnUtc.Hint</Name>
+    <Value>Created On</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.Enabled</Name>
+    <Value>Active</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.Enabled.Hint</Name>
+    <Value>Specifies if the plan is available for execution</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.IsDefault</Name>
+    <Value>Default Plan</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.IsDefault.Hint</Name>
+    <Value>Specifies if the plan is the default plan for the automation job</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.Name</Name>
+    <Value>Name</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.Name.Hint</Name>
+    <Value>Automation job plan name</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.Name.Messages.AlreadyExists</Name>
+    <Value>Automation job plan with the same name already exists</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.Description</Name>
+    <Value>Description</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.Description.Hint</Name>
+    <Value>Automation job plan description</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.Description.Messages.AlreadyExists</Name>
+    <Value>Automation job plan with the same description already exists</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.Comment</Name>
+    <Value>Comment</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.Comment.Hint</Name>
+    <Value>Automation job plan Comment</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.AutomationJobPlan.Fields.AutomationJob</Name>
+    <Value>Automation job</Value>
+  </LanguageResource>
+</LanguageResources>

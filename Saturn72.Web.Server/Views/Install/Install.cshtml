@@ -1,0 +1,14 @@
+﻿@model InstallationModel
+           
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "install-form" }))
+{
+    <div class="section-header">
+        <div class="title">
+            <span class="glyphicon glyphicon-download-alt" aria-hidden="false" ></span>
+        </div>
+        <div class="options">
+            <input type="submit" name="install" class="k-button" value="@T("Automation.Install.Messages.ClickToInstall")" />
+        </div>
+    </div>
+}

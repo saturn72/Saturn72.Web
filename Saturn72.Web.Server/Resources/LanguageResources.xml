@@ -1,0 +1,23 @@
+﻿<LanguageResources>
+  <!--Common-->
+  <LanguageResource>
+    <Name>Automation.Common.Edit</Name>
+    <Value>Edit</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.Common.AddNew</Name>
+    <Value>Add new</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.Common.Delete</Name>
+    <Value>Delete</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.Common.Save</Name>
+    <Value>Save</Value>
+  </LanguageResource>
+  <LanguageResource>
+    <Name>Automation.Common.SaveContinue</Name>
+    <Value>Save and continue</Value>
+  </LanguageResource>
+</LanguageResources>

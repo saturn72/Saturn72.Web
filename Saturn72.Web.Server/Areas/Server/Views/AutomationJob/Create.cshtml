@@ -1,0 +1,19 @@
+﻿@model AutomationJobModel
+@{
+    //page title
+    ViewBag.Title = T("Admin.Catalog.AutomationJob.AddNew").Text;
+}
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "automation-job-form" }))
+{
+    <div class="section-header">
+        <div class="title">
+            <img src="@Url.Content("~/Content/images/ico-catalog.png")" alt="" />
+            @T("Automation.AutomationJob.AddNew") @Html.ActionLink("(" + T("Automation.AutomationJob.BackToList") + ")", "List")
+        </div>
+        <div class="options">
+            <input type="submit" name="save" class="k-button" value="@T("Automation.Common.Save")" />
+            <input type="submit" name="save-continue" class="k-button" value="@T("Automation.Common.SaveContinue")" />
+        </div>
+    </div>
+    @Html.Partial("_CreateOrUpdate", Model)
+}

@@ -1,0 +1,4 @@
+Automation.Plugins.Assert
+Automation.Plugins.Logging
+Automation.Plugins.ReportWriters
+Automation.Plugins.Validators.Server

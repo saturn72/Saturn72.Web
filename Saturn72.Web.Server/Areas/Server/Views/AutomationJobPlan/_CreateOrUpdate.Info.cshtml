@@ -1,0 +1,86 @@
+﻿@model AutomationJobPlanModel
+
+<table class="adminContent">
+    @if (Model.Id > 0)
+    {
+        <tr>
+            <td class="adminTitle">
+                @Html.Saturn72LabelFor(model => model.Id):
+            </td>
+            <td class="adminData">
+                @Model.Id.ToString()
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.Saturn72LabelFor(model => model.CreatedOnUtc):
+            </td>
+            <td class="adminData">
+                @Html.DisplayFor(model => model.CreatedOnUtc)
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.Saturn72LabelFor(model => model.UpdatedOnUtc):
+            </td>
+            <td class="adminData">
+                @Html.DisplayFor(model => model.UpdatedOnUtc)
+            </td>
+        </tr>
+    }
+    <tr>
+        <td class="adminTitle">
+            @Html.Saturn72LabelFor(model => model.AutomationJobId):
+        </td>
+        <td class="adminData">
+            @Html.DisplayFor(model => model.AutomationJobId)
+            @Html.DisplayFor(model => model.AutomationJob)
+        </td>
+    </tr>
+    <tr>
+        <td class="adminTitle">
+            @Html.Saturn72LabelFor(model => model.Name):
+        </td>
+        <td class="adminData">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </td>
+    </tr>
+    <tr>
+        <td class="adminTitle">
+            @Html.Saturn72LabelFor(model => model.Enabled):
+        </td>
+        <td class="adminData">
+            @Html.EditorFor(model => model.Enabled)
+            @Html.ValidationMessageFor(model => model.Enabled)
+        </td>
+    </tr>
+    <tr>
+        <td class="adminTitle">
+            @Html.Saturn72LabelFor(model => model.IsDefault):
+        </td>
+        <td class="adminData">
+            @Html.EditorFor(model => model.IsDefault)
+            @Html.ValidationMessageFor(model => model.IsDefault)
+        </td>
+    </tr>
+    <tr>
+        <td class="adminTitle">
+            @Html.Saturn72LabelFor(model => model.Comment):
+        </td>
+        <td class="adminData">
+            @Html.TextAreaFor(model => model.Comment)
+            @Html.ValidationMessageFor(model => model.Comment)
+        </td>
+    </tr>
+
+    <tr>
+        <td class="adminTitle">
+            @Html.Saturn72LabelFor(model => model.Description):
+        </td>
+        <td class="adminData">
+            @Html.EditorFor(model => model.Description, "RichEditor")
+            @Html.ValidationMessageFor(model => model.Description)
+        </td>
+    </tr>
+</table>
