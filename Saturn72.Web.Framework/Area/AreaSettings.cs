@@ -3,7 +3,7 @@ using System.Configuration;
 using Saturn72.Core;
 using Saturn72.Core.Configuration;
 
-namespace Saturn72.Web.Framework
+namespace Saturn72.Web.Framework.Area
 {
     public class AreaSettings : ISettings
     {
@@ -28,7 +28,7 @@ namespace Saturn72.Web.Framework
 
         private static bool GetClearShadowDirectoryOnStartupValue()
         {
-            return !string.IsNullOrEmpty(ConfigurationManager.AppSettings["ClearAreasShadowDirectoryOnStartup"]) &&
+            return string.IsNullOrEmpty(ConfigurationManager.AppSettings["ClearAreasShadowDirectoryOnStartup"]) || 
                    Convert.ToBoolean(ConfigurationManager.AppSettings["ClearAreasShadowDirectoryOnStartup"]);
         }
     }

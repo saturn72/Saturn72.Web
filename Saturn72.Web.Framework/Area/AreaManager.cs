@@ -8,11 +8,10 @@ using System.Web;
 using System.Web.Compilation;
 using Saturn72.Core.ComponentModel;
 using Saturn72.Extensions;
-using Saturn72.Web.Framework;
+using Saturn72.Web.Framework.Area;
 
 [assembly: PreApplicationStartMethod(typeof (AreaManager), "Initialize")]
-
-namespace Saturn72.Web.Framework
+namespace Saturn72.Web.Framework.Area
 {
     public class AreaManager
     {
@@ -31,7 +30,7 @@ namespace Saturn72.Web.Framework
             }
         }
 
-        private static void DeployArea(DirectoryInfo dirInfo)
+        protected static void DeployArea(DirectoryInfo dirInfo)
         {
             var binDir = new DirectoryInfo(Path.Combine(_areaSettings.ShadowCopyFolder, dirInfo.Name));
             IoHelper.CreateDirectoryIfNotExists(binDir.FullName);
@@ -50,7 +49,6 @@ namespace Saturn72.Web.Framework
                 return;
             PerformFileDeploy(mainAreaFile);
         }
-
 
         private static void PerformFileDeploy(FileInfo areaFile)
         {
@@ -103,5 +101,6 @@ namespace Saturn72.Web.Framework
             //Areas
             IoHelper.CreateDirectoryIfNotExists(_areaSettings.MainAreaFolder);
         }
+
     }
 }

@@ -5,7 +5,7 @@ using System.Web.Http;
 using Saturn72.Core.Infrastructure;
 using Saturn72.Extensions;
 
-namespace Saturn72.Web.Framework.WebApi
+namespace Saturn72.Web.Framework.Area.WebApi
 {
     public class WebApiConfigurar : IWebApiConfigurar
     {
@@ -25,7 +25,7 @@ namespace Saturn72.Web.Framework.WebApi
                 if (apiConfigs.IsEmpty())
                     return;
 
-                foreach (var apiConfig in apiConfigs.OrderBy(ac=>ac.Order))
+                foreach (var apiConfig in apiConfigs.OrderBy(ac=>ac.ConfigureOrder))
                     config.Routes.MapHttpRoute(apiConfig.Name, apiConfig.RouteTemplate, apiConfig.Defaults,
                         apiConfig.Constraints);
             });

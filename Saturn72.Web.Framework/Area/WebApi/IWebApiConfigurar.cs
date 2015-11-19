@@ -1,5 +1,5 @@
 ﻿
-namespace Saturn72.Web.Framework.WebApi
+namespace Saturn72.Web.Framework.Area.WebApi
 {
     public interface IWebApiConfigurar
     {

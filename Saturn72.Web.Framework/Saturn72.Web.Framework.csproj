@@ -168,12 +168,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AreaManager.cs" />
-    <Compile Include="AreaSettings.cs" />
+    <Compile Include="Area\AreaManager.cs" />
+    <Compile Include="Area\AreaSettings.cs" />
     <Compile Include="Extensions\AutoMapperExtensions.cs" />
     <Compile Include="KendoUi\Components\Menu\MenuItem.cs" />
-    <Compile Include="WebApi\IWebApiConfiguration.cs" />
-    <Compile Include="WebApi\IWebApiConfigurar.cs" />
+    <Compile Include="Area\WebApi\IWebApiConfiguration.cs" />
+    <Compile Include="Area\WebApi\IWebApiConfigurar.cs" />
     <Compile Include="Services\Install\IInstallationService.cs" />
     <Compile Include="KendoUi\ModelStateExtenstions.cs" />
     <Compile Include="Controllers\Saturn72ApiControllerBase.cs" />
@@ -218,7 +218,7 @@
     <Compile Include="Validators\BaseSaturn72Validator.cs" />
     <Compile Include="ViewEngines\Razor\WebViewPage.cs" />
     <Compile Include="ViewEngines\Saturn72ViewEngine.cs" />
-    <Compile Include="WebApi\WebApiConfigurar.cs" />
+    <Compile Include="Area\WebApi\WebApiConfigurar.cs" />
     <Compile Include="WebWorkContext.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,11 +10,11 @@ using Saturn72.Core.Infrastructure.DependencyManagement;
 using Saturn72.Core.Services.Authentication;
 using Saturn72.Core.Services.Localization;
 using Saturn72.Core.Services.Users;
+using Saturn72.Web.Framework.Area.WebApi;
 using Saturn72.Web.Framework.Fakes;
 using Saturn72.Web.Framework.Routes;
 using Saturn72.Web.Framework.Services.Install;
 using Saturn72.Web.Framework.UI;
-using Saturn72.Web.Framework.WebApi;
 
 namespace Saturn72.Web.Framework.Infrastructure
 {

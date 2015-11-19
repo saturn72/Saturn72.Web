@@ -1,9 +1,8 @@
-namespace Saturn72.Web.Framework.WebApi
+namespace Saturn72.Web.Framework.Area.WebApi
 {
     public interface IWebApiConfiguration
     {
-        int Order { get; }
-        
+        int ConfigureOrder { get; }
         string Name { get; }
         string RouteTemplate { get; }
         object Defaults { get; }
