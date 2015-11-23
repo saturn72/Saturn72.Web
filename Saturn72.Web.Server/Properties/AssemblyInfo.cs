@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Automation.Web.UI")]
+[assembly: AssemblyTitle("Saturn72.Web.UI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Saturn Technologies")]
-[assembly: AssemblyProduct("Automation.Web.UI")]
+[assembly: AssemblyProduct("Saturn72.Web.UI")]
 [assembly: AssemblyCopyright("Copyright © Saturn Technologies 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
