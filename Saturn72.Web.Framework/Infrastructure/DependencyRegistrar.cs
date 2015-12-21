@@ -10,7 +10,6 @@ using Saturn72.Core.Infrastructure.DependencyManagement;
 using Saturn72.Core.Services.Authentication;
 using Saturn72.Core.Services.Localization;
 using Saturn72.Core.Services.Users;
-using Saturn72.Web.Framework.Area.WebApi;
 using Saturn72.Web.Framework.Fakes;
 using Saturn72.Web.Framework.Routes;
 using Saturn72.Web.Framework.Services.Install;
@@ -56,8 +55,6 @@ namespace Saturn72.Web.Framework.Infrastructure
 
             //Route
             builder.RegisterType<RoutePublisher>().As<IRoutePublisher>().SingleInstance();
-            //WebApi
-            builder.RegisterType<WebApiConfigurar>().As<IWebApiConfigurar>().SingleInstance();
 
             builder.RegisterType<WebWorkContext>().As<IWorkContext>().InstancePerLifetimeScope();
 

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Web.Mvc;
 using Saturn72.Core;
-using Saturn72.Core.Domain.Logging;
 using Saturn72.Core.Infrastructure;
+using Saturn72.Core.Logging;
+using Saturn72.Extensions;
 using Saturn72.Web.Framework.UI;
 
 namespace Saturn72.Web.Framework.Controllers
@@ -14,6 +15,59 @@ namespace Saturn72.Web.Framework.Controllers
     /// </summary>
     public abstract class Saturn72ControllerBase : Controller
     {
+        private string _viewPathFormat;
+        protected abstract string ControllerMainViewPath { get; }
+
+        private string ViewPathFormat => _viewPathFormat ?? (_viewPathFormat = BuildViewPathFormat());
+
+        private string BuildViewPathFormat()
+        {
+            var cmvp = ControllerMainViewPath.EndsWith("/") ? ControllerMainViewPath : ControllerMainViewPath + "/";
+
+            cmvp += "{0}.cshtml";
+            return cmvp;
+        }
+
+        protected virtual ViewResult GetView(object model)
+        {
+            return GetView(GetActionNameFromRequest(), model);
+        }
+
+        private string GetActionNameFromRequest()
+        {
+            return RouteData.Values["action"].ToString();
+        }
+
+        protected virtual ViewResult GetView()
+        {
+            return GetView(GetActionNameFromRequest());
+        }
+
+        protected virtual ViewResult GetView(string viewName)
+        {
+            return View(ViewPathFormat.AsFormat(viewName));
+        }
+
+        protected virtual ViewResult GetView(string viewName, object model)
+        {
+            return View(ViewPathFormat.AsFormat(viewName), model);
+        }
+
+        protected virtual PartialViewResult GetPartialView(object model)
+        {
+            return GetPartialView(GetActionNameFromRequest(), model);
+        }
+
+        protected virtual PartialViewResult GetPartialView(string partialViewName)
+        {
+            return PartialView(ViewPathFormat.AsFormat(partialViewName));
+        }
+
+        protected virtual PartialViewResult GetPartialView(string partialViewName, object model)
+        {
+            return PartialView(ViewPathFormat.AsFormat(partialViewName), model);
+        }
+
         /// <summary>
         ///     Render partial view to string
         /// </summary>

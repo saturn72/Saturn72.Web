@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web.Routing;
 using Saturn72.Core.Infrastructure;
 using Saturn72.Core.Plugins;
+using Saturn72.Extensions;
+using Saturn72.Web.Framework.Plugins;
 
 namespace Saturn72.Web.Framework.Routes
 {
@@ -54,7 +56,7 @@ namespace Saturn72.Web.Framework.Routes
             {
                 //Ignore not installed plugins
                 var plugin = FindPlugin(providerType);
-                if (plugin != null && !plugin.Installed)
+                if (plugin != null && !plugin.Installed && !typeof(IAreaPlugin).IsAssignableFrom(providerType))
                     continue;
 
                 var provider = Activator.CreateInstance(providerType) as IRouteProvider;

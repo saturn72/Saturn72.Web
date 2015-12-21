@@ -1,2 +1,0 @@
-﻿DataProvider: sqlserver
-DataConnectionString: Data Source=.\SqlExpress;Initial Catalog=AutomationDb.Server;Integrated Security=True;Persist Security Info=False

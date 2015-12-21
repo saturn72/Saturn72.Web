@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Saturn72.Web.Framework.ViewEngines
 {
@@ -7,40 +6,90 @@ namespace Saturn72.Web.Framework.ViewEngines
     {
         public Saturn72ViewEngine()
         {
+            //Master
             MasterLocationFormats = new[]
             {
                 "~/Views/{1}/{0}.cshtml",
-                "~/Views/Shared/{0}.cshtml"
+                "~/Views/{1}/{0}.vbhtml",
+                "~/Views/Shared/{0}.cshtml",
+                "~/Views/Shared/{0}.vbhtml",
+                "~/Areas/{2}/Views/{1}/{0}.cshtml",
+                "~/Areas/{2}/Views/{1}/{0}.vbhtml",
+                "~/Areas/{2}/Views/Shared/{0}.cshtml",
+                "~/Areas/{2}/Views/Shared/{0}.vbhtml",
+                "~/Plugins/{2}/Views/{1}/{0}.cshtml",
+                "~/Plugins/{2}/Views/{1}/{0}.vbhtml",
+                "~/Plugins/{2}/Views/Shared/{0}.cshtml",
+                "~/Plugins/{2}/Views/Shared/{0}.vbhtml"
+            };
+
+            PartialViewLocationFormats = new[]
+                      {
+                "~/Views/{1}/{0}.cshtml",
+                "~/Views/{1}/{0}.vbhtml",
+                "~/Views/Shared/{0}.cshtml",
+                "~/Views/Shared/{0}.vbhtml",
+                "~/Areas/{2}/Views/{1}/{0}.cshtml",
+                "~/Areas/{2}/Views/{1}/{0}.vbhtml",
+                "~/Areas/{2}/Views/Shared/{0}.cshtml",
+                "~/Areas/{2}/Views/Shared/{0}.vbhtml",
+                "~/Plugins/{2}/Views/{1}/{0}.cshtml",
+                "~/Plugins/{2}/Views/{1}/{0}.vbhtml",
+                "~/Plugins/{2}/Views/Shared/{0}.cshtml",
+                "~/Plugins/{2}/Views/Shared/{0}.vbhtml",
             };
 
             ViewLocationFormats = new[]
             {
                 "~/Views/{1}/{0}.cshtml",
-                "~/Views/Shared/{0}.cshtml"
+                "~/Views/{1}/{0}.vbhtml",
+                "~/Views/Shared/{0}.cshtml",
+                "~/Views/Shared/{0}.vbhtml",
+                "~/Areas/{2}/Views/{1}/{0}.cshtml",
+                "~/Areas/{2}/Views/{1}/{0}.vbhtml",
+                "~/Areas/{2}/Views/Shared/{0}.cshtml",
+                "~/Areas/{2}/Views/Shared/{0}.vbhtml",
+                "~/Plugins/{2}/Views/{1}/{0}.cshtml",
+                "~/Plugins/{2}/Views/{1}/{0}.vbhtml",
+                "~/Plugins/{2}/Views/Shared/{0}.cshtml"
             };
 
-            PartialViewLocationFormats = new[]
+            //Areas
+            AreaMasterLocationFormats = new[]
             {
-                "~/Views/{1}/{0}.cshtml",
-                "~/Views/Shared/{0}.cshtml"
+                "~/Areas/{2}/Views/{1}/{0}.cshtml",
+                "~/Areas/{2}/Views/{1}/{0}.vbhtml",
+                "~/Areas/{2}/Views/Shared/{0}.cshtml",
+                "~/Areas/{2}/Views/Shared/{0}.vbhtml",
+                "~/Plugins/{2}/Views/{1}/{0}.cshtml",
+                "~/Plugins/{2}/Views/{1}/{0}.vbhtml",
+                "~/Plugins/{2}/Views/Shared/{0}.cshtml",
+                "~/Plugins/{2}/Views/Shared/{0}.vbhtml"
             };
 
             AreaViewLocationFormats = new[]
             {
                 "~/Areas/{2}/Views/{1}/{0}.cshtml",
-                "~/Areas/{2}/Views/Shared/{0}.cshtml"
+                "~/Areas/{2}/Views/{1}/{0}.vbhtml",
+                "~/Areas/{2}/Views/Shared/{0}.cshtml",
+                "~/Areas/{2}/Views/Shared/{0}.vbhtml",
+                "~/Plugins/{2}/Views/{1}/{0}.cshtml",
+                "~/Plugins/{2}/Views/{1}/{0}.vbhtml",
+                "~/Plugins/{2}/Views/Shared/{0}.cshtml",
+                "~/Plugins/{2}/Views/Shared/{0}.vbhtml"
             };
 
-            AreaMasterLocationFormats = new[]
-            {
-                "~/Areas/{2}/Views/{1}/{0}.cshtml",
-                "~/Areas/{2}/Views/Shared/{0}.cshtml"
-            };
 
             AreaPartialViewLocationFormats = new[]
             {
                 "~/Areas/{2}/Views/{1}/{0}.cshtml",
-                "~/Areas/{2}/Views/Shared/{0}.cshtml"
+                "~/Areas/{2}/Views/{1}/{0}.vbhtml",
+                "~/Areas/{2}/Views/Shared/{0}.cshtml",
+                "~/Areas/{2}/Views/Shared/{0}.vbhtml",
+                "~/Plugins/{2}/Views/{1}/{0}.cshtml",
+                "~/Plugins/{2}/Views/{1}/{0}.vbhtml",
+                "~/Plugins/{2}/Views/Shared/{0}.cshtml",
+                "~/Plugins/{2}/Views/Shared/{0}.vbhtml"
             };
 
 

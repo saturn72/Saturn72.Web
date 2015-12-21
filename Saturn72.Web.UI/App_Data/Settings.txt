@@ -1,0 +1,2 @@
+﻿DataProvider: sqlserver
+DataConnectionString: Data Source=.\SqlExpress;Initial Catalog=Saturn72.Web;Integrated Security=True;Persist Security Info=False

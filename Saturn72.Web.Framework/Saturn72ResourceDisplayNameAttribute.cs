@@ -14,19 +14,10 @@ namespace Saturn72.Web.Framework
 
         public string ResourceKey { get; set; }
 
-        public override string DisplayName
-        {
-            get
-            {
-                return EngineContext.Current
-                    .Resolve<ILocalizationService>()
-                    .GetResource(ResourceKey, true, ResourceKey);
-            }
-        }
+        public override string DisplayName => EngineContext.Current
+            .Resolve<ILocalizationService>()
+            .GetResource(ResourceKey, true, ResourceKey);
 
-        public string Name
-        {
-            get { return "Saturn72ResourceDisplayName"; }
-        }
+        public string Name => "Saturn72ResourceDisplayName";
     }
 }
