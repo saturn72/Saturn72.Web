@@ -5,6 +5,7 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Web.Framework", "Saturn72.Web.Framework\Saturn72.Web.Framework.csproj", "{BC9C67C6-17E3-4A01-B671-FC94FFA7F8DA}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Web.UI", "Saturn72.Web.UI\Saturn72.Web.UI.csproj", "{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AF18C3A6-BC4B-4B49-AEE3-795024AB6238}"
@@ -32,6 +33,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Areas", "Areas", "{10D49D82-1DC9-4699-9170-1424BF5B8AF1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Web.Areas.Admin", "Areas\Saturn72.Web.Areas.Admin\Saturn72.Web.Areas.Admin.csproj", "{C46EE27C-1FC7-41B7-9654-1B9EDAD2C757}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Web.UI", "Saturn72.Web.Server\Saturn72.Web.UI.csproj", "{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}"
+>>>>>>> 7663a3b5c3a05aa72def9fa53ca463a227e02384
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,14 +63,18 @@ Global
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Debug|x64.ActiveCfg = Debug|x64
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Debug|x64.Build.0 = Debug|x64
+<<<<<<< HEAD
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Dev|Any CPU.ActiveCfg = Saturn72.Web.Dev|Any CPU
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Dev|Any CPU.Build.0 = Saturn72.Web.Dev|Any CPU
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Dev|x64.ActiveCfg = Saturn72.Web.Dev|x64
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Dev|x64.Build.0 = Saturn72.Web.Dev|x64
+=======
+>>>>>>> 7663a3b5c3a05aa72def9fa53ca463a227e02384
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Release|x64.ActiveCfg = Release|x64
 		{D061F9EF-3E0B-4BE8-8891-2E4BBB0866DA}.Release|x64.Build.0 = Release|x64
+<<<<<<< HEAD
 		{EDB1850F-5D17-4DE5-B787-548E41074F9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EDB1850F-5D17-4DE5-B787-548E41074F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDB1850F-5D17-4DE5-B787-548E41074F9D}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -163,6 +171,8 @@ Global
 		{C46EE27C-1FC7-41B7-9654-1B9EDAD2C757}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C46EE27C-1FC7-41B7-9654-1B9EDAD2C757}.Release|x64.ActiveCfg = Release|Any CPU
 		{C46EE27C-1FC7-41B7-9654-1B9EDAD2C757}.Release|x64.Build.0 = Release|Any CPU
+=======
+>>>>>>> 7663a3b5c3a05aa72def9fa53ca463a227e02384
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
