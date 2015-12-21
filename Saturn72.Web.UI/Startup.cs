@@ -1,4 +1,7 @@
-﻿using System.Web.Http;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 using FluentValidation.Mvc;
@@ -8,6 +11,7 @@ using Saturn72.Core.Logging;
 using Saturn72.Core.Services.Tasks;
 using Saturn72.Web.Framework;
 using Saturn72.Web.Framework.Mvc;
+using Saturn72.Web.Framework.Owin;
 using Saturn72.Web.Framework.Routes;
 using Saturn72.Web.Framework.ViewEngines;
 
@@ -23,7 +27,7 @@ namespace Saturn72.Web.UI
             AreaRegistration.RegisterAllAreas();
 
             RegisterRoutes();
-            ConfigureWebApi(appBuilder);
+            ConfigureWebApiUsingOwin(appBuilder);
 
             DataAnnotationsModelValidatorProvider.AddImplicitRequiredAttributeForValueTypes = false;
             ModelValidatorProviders.Providers.Add(
@@ -37,12 +41,32 @@ namespace Saturn72.Web.UI
 
         private static void StartTaskManager()
         {
-            TaskManager.Instance.Initialize();
-            TaskManager.Instance.Start();
+            EngineContext.Current.Resolve<ITaskManager>().Start();
         }
 
 
-        private static void ConfigureWebApi(IAppBuilder appBuilder)
+        private static void ConfigureWebApiUsingOwin(IAppBuilder appBuilder)
+        {
+            ConfigureWebApiViaOwin(appBuilder);
+            ConfigureOtherOwinComponents(appBuilder);
+        }
+
+        private static void ConfigureOtherOwinComponents(IAppBuilder appBuilder)
+        {
+            var typeFinder = EngineContext.Current.Resolve<ITypeFinder>();
+            var ocTypes = typeFinder.FindClassesOfType<IOwinConfigurar>();
+
+            var ocInstances = new List<IOwinConfigurar>();
+            foreach (var drType in ocTypes)
+                ocInstances.Add((IOwinConfigurar) Activator.CreateInstance(drType));
+
+            //sort
+            ocInstances = ocInstances.AsQueryable().OrderBy(t => t.Order).ToList();
+            foreach (var owinConfigurar in ocInstances)
+                owinConfigurar.Configure(appBuilder);
+        }
+
+        private static void ConfigureWebApiViaOwin(IAppBuilder appBuilder)
         {
             var config = ConfigureApi();
 

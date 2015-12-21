@@ -78,6 +78,7 @@
     <Content Include="web.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Views\Dashboard\Index.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
