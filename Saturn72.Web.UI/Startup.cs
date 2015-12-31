@@ -36,14 +36,13 @@ namespace Saturn72.Web.UI
             StartTaskManager();
 
             var logger = EngineContext.Current.Resolve<ILogger>();
-            logger.Information("Application started", null, null);
+            logger.Information("Application started");
         }
 
         private static void StartTaskManager()
         {
-            EngineContext.Current.Resolve<ITaskManager>().Start();
+            EngineContext.Current.Resolve<ITaskManager>().Initialize();
         }
-
 
         private static void ConfigureWebApiUsingOwin(IAppBuilder appBuilder)
         {
@@ -103,7 +102,6 @@ namespace Saturn72.Web.UI
                 );
             return config;
         }
-
 
         private static void SetViewEngine()
         {
