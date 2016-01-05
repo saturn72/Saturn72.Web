@@ -1,21 +1,21 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
-using Saturn72.Core.Plugins;
+using Saturn72.Core.Modules;
 using Saturn72.Web.Framework.Plugins;
 
-namespace Saturn72.Web.Areas.Admin
+namespace Saturn72.Web.Areas.Ui
 {
-    public class AdminArea : BasePlugin, IAreaPlugin
+    public class AdminArea : BaseModule, IAreaModule
     {
-        public string AreaName => "Saturn72.Web.Areas.Admin";
+        public string AreaName => "Saturn72.Web.Areas.Ui";
 
         public void RegisterRoutes(RouteCollection routes)
         {
             //UI path
-            routes.MapRoute("Default.Admin.UI",
-                "admin/{controller}/{action}/{id}",
+            routes.MapRoute("Default.UI",
+                "{controller}/{action}/{id}",
                 new {controller = "Dashboard", action = "Index", id = UrlParameter.Optional},
-                new[] { "Saturn72.Web.Areas.Admin.Controllers" });
+                new[] { "Saturn72.Web.Areas.Ui.Controllers" });
         }
         public int Priority => 100;
     }

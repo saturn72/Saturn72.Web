@@ -99,6 +99,10 @@
       <HintPath>..\packages\FluentValidation.5.6.2.0\lib\Net45\FluentValidation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -178,11 +182,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Owin\IOwinConfigurar.cs" />
-    <Compile Include="Plugins\AreaManager.cs" />
     <Compile Include="Plugins\AreaSettings.cs" />
     <Compile Include="Extensions\AutoMapperExtensions.cs" />
     <Compile Include="KendoUi\Components\Menu\MenuItem.cs" />
-    <Compile Include="Plugins\IAreaPlugin.cs" />
+    <Compile Include="Plugins\IAreaModule.cs" />
     <Compile Include="Services\Install\IInstallationService.cs" />
     <Compile Include="KendoUi\ModelStateExtenstions.cs" />
     <Compile Include="Controllers\Saturn72ApiControllerBase.cs" />

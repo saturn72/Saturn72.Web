@@ -19,9 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Core", "..\Saturn7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Core.Services", "..\Saturn72.Core\src\Saturn72.Core.Services\Saturn72.Core.Services.csproj", "{6F2D2418-65F5-4C10-B871-47B435026D54}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{B4A7FA20-8B15-4161-AC80-6C31C53FB30A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{B4A7FA20-8B15-4161-AC80-6C31C53FB30A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Plugins.EntityFramework", "..\Saturn72.Plugins\Saturn72.Plugins.EntityFramework\Saturn72.Plugins.EntityFramework.csproj", "{F531ACCF-A3D6-4DF7-A47C-5D93C9015A4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Modules.EntityFramework", "..\Saturn72.Plugins\Saturn72.Plugins.EntityFramework\Saturn72.Modules.EntityFramework.csproj", "{F531ACCF-A3D6-4DF7-A47C-5D93C9015A4E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{72BB7D78-0680-418A-A02F-32F54E603860}"
 EndProject
@@ -33,7 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Areas", "Areas", "{10D49D82
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Web.Areas.Admin", "Areas\Saturn72.Web.Areas.Admin\Saturn72.Web.Areas.Admin.csproj", "{C46EE27C-1FC7-41B7-9654-1B9EDAD2C757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Plugins.HangFire", "..\Saturn72.Plugins\Saturn72.Plugins.HangFire\Saturn72.Plugins.HangFire.csproj", "{9BE55B6D-55DE-4D8C-9014-F718CC44619F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Modules.HangFire", "..\Saturn72.Plugins\Saturn72.Plugins.HangFire\Saturn72.Modules.HangFire.csproj", "{9BE55B6D-55DE-4D8C-9014-F718CC44619F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saturn72.Core.Services.Tests", "..\Saturn72.Core\src\Saturn72.Core.Services.Tests\Saturn72.Core.Services.Tests.csproj", "{1822462C-F142-4A12-8DEF-A25ADD3FFA63}"
 EndProject

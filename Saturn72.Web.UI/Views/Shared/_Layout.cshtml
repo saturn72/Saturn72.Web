@@ -22,6 +22,15 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
 </head>
 <body>
+    **********************************************************************************
+This is old layoiut code
+
+<div class="header-menu">
+    <div class="header-top"></div>
+    <div class="header-middle"></div>
+    <div class="header-bottom"></div>
+</div>
+
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -32,6 +41,16 @@
             </button>
             @Html.ActionLink("Automation Server", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
         </div>
+
+
+        <div class="header-menu">
+            @Html.Partial("_HeaderMenu")
+        </div>
+        **********************************************************************************
+        This is old layoiut code
+
+        **********************************************************************************
+        This is old layoiut code
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>

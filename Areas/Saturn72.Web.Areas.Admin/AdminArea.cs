@@ -1,11 +1,11 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
-using Saturn72.Core.Plugins;
+using Saturn72.Core.Modules;
 using Saturn72.Web.Framework.Plugins;
 
 namespace Saturn72.Web.Areas.Admin
 {
-    public class AdminArea : BasePlugin, IAreaPlugin
+    public class AdminArea : BaseModule, IAreaModule
     {
         public string AreaName => "Saturn72.Web.Areas.Admin";
 

@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Routing;
 using Saturn72.Core.Infrastructure;
-using Saturn72.Core.Plugins;
-using Saturn72.Extensions;
+using Saturn72.Core.Modules;
 using Saturn72.Web.Framework.Plugins;
 
 namespace Saturn72.Web.Framework.Routes
@@ -27,12 +26,12 @@ namespace Saturn72.Web.Framework.Routes
         /// </summary>
         /// <param name="providerType">Provider type</param>
         /// <returns>Plugin descriptor</returns>
-        protected virtual PluginDescriptor FindPlugin(Type providerType)
+        protected virtual ModuleDescriptor FindPlugin(Type providerType)
         {
             if (providerType == null)
                 throw new ArgumentNullException("providerType");
 
-            foreach (var plugin in PluginManager.ReferencedPlugins)
+            foreach (var plugin in ModuleManager.ReferencedPlugins)
             {
                 if (plugin.ReferencedAssembly == null)
                     continue;
@@ -56,7 +55,7 @@ namespace Saturn72.Web.Framework.Routes
             {
                 //Ignore not installed plugins
                 var plugin = FindPlugin(providerType);
-                if (plugin != null && !plugin.Installed && !typeof(IAreaPlugin).IsAssignableFrom(providerType))
+                if (plugin != null && !plugin.Installed && !typeof(IAreaModule).IsAssignableFrom(providerType))
                     continue;
 
                 var provider = Activator.CreateInstance(providerType) as IRouteProvider;
